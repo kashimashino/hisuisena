@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>需求一</title>
+    <style>
+        #popLayer {
+            display: none;
+            background-color: #B3B3B3;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+        
+        #popBox {
+            display: none;
+            background-color: #FFFFFF;
+            z-index: 11;
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        #popBox .close {
+            text-align: right;
+            margin-right: 5px;
+            background-color: #F8F8F8;
+        }
+        
+        #popBox .close a {
+            text-decoration: none;
+            color: #2D2C3B;
+        }
+        
+        .information {
+            width: 300px;
+            margin-left: 20px;
+        }
+        
+        #BBox {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            box-shadow: inset 0 0 13px -8px;
+            left: 750px;
+            top: 300px;
+            border-radius: 5%;
+        }
+        
+        #Box {
+            margin-left: 5px;
+            padding-left: 90px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+        }
+        
+        .picture {
+            margin-top: 10px;
+            width: 290px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #Alert {
+            width: 300px;
+            height: 30px;
+            background-color: #428bca;
+        }
+        
+        div.faq :hover {
+            background-color: rgb(48, 113, 169);
+        }
+        
+        .password {
+            width: 290px;
+            height: 20px;
+        }
+        
+        .name {
+            width: 290px;
+            height: 20px;
+        }
+        
+        #faq {
+            margin-top: 30px;
+        }
+        
+        .frame {
+            width: 300px;
+        }
+        
+        a:hover {
+            background-color: rgb(48, 113, 169);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="BBox">
+        <div id="Box">
+            <div class="picture"><img src="Snipaste_2020-11-14_13-10-13.png" alt=""></div>
+            <h1 class="picture">登陆</h1>
+            <div class="frame">
+                <input type="text" class="name" id="username" placeholder="请输入学号">
+            </div>
+            <div style="width: 300px;height: 20px;"></div>
+            <div class="frame">
+                <input type="password" class="password" id="username" placeholder="密码">
+            </div>
+            <div id="faq">
+                <input type="button" name="popBox" value="login" onclick="popBox()" id="Alert">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popLayer"></div>
+    <div id="popBox">
+        <div class="close">
+            <a href="javascript:void(0)" onclick="closeBox()">×</a>
+        </div>
+        <div class="content">
+            <div class="information">
+                <h1>个人信息</h1>
+            </div>
+            <div class="information">
+                <p>姓名：云家园</p>
+            </div class="information">
+            <div class="information">
+                <p>学号:100</p>
+            </div>
+            <div class="information">
+                <p>性别:男</p>
+            </div>
+            <div class="information">
+                <p>江西省抚州市</p>
+            </div>
+            <div class="information">
+                <p>手机号:18170415733</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function popBox() {
+            var popBox = document.getElementById("popBox");
+            var popLayer = document.getElementById("popLayer");
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        };
+
+        function closeBox() {
+            var popBox = document.getElementById("popBox");
+            var popLayer = document.getElementById("popLayer");
+            popBox.style.display = "none";
+            popLayer.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

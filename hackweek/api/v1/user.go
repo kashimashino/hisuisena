@@ -142,12 +142,12 @@ func EditPassword(c *gin.Context)  {
 //			"url":"http://hellosun.net.cn/hackweek/"+f.Filename,
 //		})
 //	}
-//	endpoint := "http://oss-cn-hangzhou.aliyuncs.com"
-//	accessKeyId := "LTAI4G9CDETryAM9M33stee8"
-//	accessKeySecret := "QIlVgwI5n8H1SM0433IwljLoVxxKou"
-//	bucketName := "hack-week"
-//	objectName := "hackweek/"+f.Filename
-//	localFileName := "./images/"+f.Filename
+//	endpoint := ************
+//	accessKeyId := *************
+//	accessKeySecret := "**************
+//	bucketName :=************
+//	objectName := "***********
+//	localFileName := "*******************
 //
 //	// 创建OSSClient实例。
 //	client,err:= oss.New(endpoint,accessKeyId,accessKeySecret)

@@ -239,12 +239,13 @@
 }
 查看动态
 {
-    	Username: Username,
-		Cate:     Cate,
+    "data" : Username{
+	 	Cate:     Cate,
 		Tittle:   Tittle,
 		Info:     Info,
 		ImageUrl: ImageUrl,
-		Likes:    999,
+		Likes:    999
+		
 	}
     "msg": "success",
     "status": "Ok"

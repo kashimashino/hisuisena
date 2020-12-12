@@ -198,7 +198,7 @@
 
 ```json
 {
-    	"status" : code,
+    	"status" : 200,
 		"msg" :  "密码修改成功"
 }
 ```

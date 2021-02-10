@@ -1,5 +1,12 @@
 name: Go
 
+
+ssr://c2hjdS5jbmhvc3QueHl6OjEwNjkzOmF1dGhfYWVzMTI4X21kNTphZXMtMjU2LWNmYjp0bHMxLjJfdGlja2V0X2F1dGg6VkhWWVNtUjAvP29iZnNwYXJhbT1MbTFwWTNKdmMyOW1kQzVqYjIwJnByb3RvcGFyYW09TmpnME16cDZVVkF4UkVNJnJlbWFya3M9NVkydzVicW1JT1d0bi1TNXNDM21uYVhuZ3Jubmpwdm9qbzdtaTRrZ0xTQXhNRFk1TXlEbGpaWG5xNl9sajZNJmdyb3VwPTU0dVg1YTJRNWItcjZMZVI
+
+
+
+
+
 on:
   push:
     branches: [ main ]
